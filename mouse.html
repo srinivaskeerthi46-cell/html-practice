@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse</title>
+</head>
+<body>
+    <button id="btn">Explore Now</button>
+    
+    <script>
+        // Mousedown//
+    const button=document.getElementById('btn')
+    button.addEventListener("mousedown",()=>{
+        button.style.backgroundColor="red"
+    })
+
+    //Mouseup//
+    button.addEventListener('mouseup',()=>{
+        button.style.backgroundColor="purple"
+    })
+
+    //Mouseover//
+    button.addEventListener('mouseover',()=>{
+        button.style.backgroundColor="green"
+    })
+
+    //Mousemove//
+    button.addEventListener("mousemove",()=>{
+        button.style.backgroundColor="blue"
+    })
+
+    //Mouseout//
+    button.addEventListener("mouseout",()=>{
+        button.style.backgroundColor="yellow"
+    })
+
+
+
+    
+    
+
+</script>
+</body>
+</html>

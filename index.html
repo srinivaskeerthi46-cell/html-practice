@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows</title>
+</head>
+<body>
+<h1>Welcome</h1>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, sequi quis delectus nobis, laboriosam ea obcaecati itaque veniam eaque velit placeat quod doloribus molestias quidem eos possimus error, id ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quod cum quam? Suscipit vel repudiandae autem laboriosam nisi? Ullam dolorem quo magni culpa mollitia ipsum itaque consequuntur excepturi? Deleniti, placeat.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit nisi sit vero repudiandae, quibusdam impedit exercitationem, doloribus distinctio assumenda iste vitae unde nemo esse architecto delectus eius repellendus perferendis fuga.</p>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    <h1>Hello World</h1>
+    
+    <script>
+        //Window event
+        window.addEventListener('load',function(){
+            console.log('loaded Succussefully')
+        })
+        window.addEventListener('beforeunload',(e)=>{
+            e.preventDefault();
+            e.returnValue="";
+        })
+        window.addEventListener('resize',()=>{
+            console.log("innerwidth:"+window.innerwidth+""+window.innerHeight)
+        })
+        window.addEventListener('scroll',()=>{
+            console.log(window.scrollY)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //Async function//
+        function neethu(){
+         return new Promise((resolve)=>{
+    
+            setTimeout(() =>{
+                resolve("hello neethu")
+            },5000)
+         });
+            
+        }
+
+       //Await function//
+        async function kiran() {
+            console.log("welcome");
+            let message=await neethu();
+            console.log(message)
+            
+        }
+        kiran()
+
+
+</script>
+
+</body>
+</html>
